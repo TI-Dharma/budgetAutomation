@@ -1,0 +1,723 @@
+[
+  {
+    "code": "000001",
+    "name": "VENDEDOR PADRAO",
+    "shortName": "VENDEDOR PADRAO",
+    "bitrixName": "Eliabe Rodrigues",
+    "email": ""
+  },
+  {
+    "code": "000002",
+    "name": "Lidiane dos Santos",
+    "shortName": "Lidiane",
+    "bitrixName": "Lidiane dos Santos",
+    "email": "lidiane@grupodharma.com.br"
+  },
+  {
+    "code": "000003",
+    "name": "Denis Pantaleao",
+    "shortName": "Denis",
+    "bitrixName": "Denis Pantaleao",
+    "email": "denis@grupodharma.com.br"
+  },
+  {
+    "code": "000005",
+    "name": "TAMIRES RODRIGUES",
+    "shortName": "TAMIRES",
+    "bitrixName": "TAMIRES RODRIGUES",
+    "email": "comercial03@grupodharma.com.br"
+  },
+  {
+    "code": "000006",
+    "name": "Cinthia Ferrari",
+    "shortName": "Cinthia",
+    "bitrixName": "Cinthia Ferrari",
+    "email": "cinthia@grupodharma.com.br"
+  },
+  {
+    "code": "000007",
+    "name": "Denise Pereira da Silva",
+    "shortName": "Denise",
+    "bitrixName": "Denise Pereira da Silva",
+    "email": "comercial01@grupodharma.com.br"
+  },
+  {
+    "code": "000008",
+    "name": "Cristiane Gondim",
+    "shortName": "Cristiane Salvador",
+    "bitrixName": "Cristiane Gondim",
+    "email": ""
+  },
+  {
+    "code": "000009",
+    "name": "LEIA VELOSO",
+    "shortName": "LEIA",
+    "bitrixName": "LEIA VELOSO",
+    "email": "locacao4@grupodharma.com.br"
+  },
+  {
+    "code": "000010",
+    "name": "HELENICE INACIO",
+    "shortName": "HELENICE",
+    "bitrixName": "HELENICE INACIO",
+    "email": ""
+  },
+  {
+    "code": "000011",
+    "name": "Carlos Romano",
+    "shortName": "Carlos",
+    "bitrixName": "Carlos Romano",
+    "email": ""
+  },
+  {
+    "code": "000012",
+    "name": "Daniela Viana Zain de Oliveira",
+    "shortName": "Daniela",
+    "bitrixName": "Daniela Viana Zain de Oliveira",
+    "email": ""
+  },
+  {
+    "code": "000013",
+    "name": "Guilherme Franceschinelli",
+    "shortName": "Guilherme",
+    "bitrixName": "Guilherme Franceschinelli",
+    "email": ""
+  },
+  {
+    "code": "000014",
+    "name": "PATRICIA",
+    "shortName": "PATRICIA",
+    "bitrixName": "PATRICIA",
+    "email": ""
+  },
+  {
+    "code": "000015",
+    "name": "Camila Godoy",
+    "shortName": "CAMILA",
+    "bitrixName": "Camila Godoy",
+    "email": ""
+  },
+  {
+    "code": "000016",
+    "name": "NATHALIA DESIO ROMANO",
+    "shortName": "NATHALIA",
+    "bitrixName": "NATHALIA DESIO ROMANO",
+    "email": ""
+  },
+  {
+    "code": "000017",
+    "name": "Ferreira",
+    "shortName": "Ferreira",
+    "bitrixName": "Ferreira",
+    "email": ""
+  },
+  {
+    "code": "000018",
+    "name": "Jhonatan Teles",
+    "shortName": "Jhonatan",
+    "bitrixName": "Jhonatan Teles",
+    "email": ""
+  },
+  {
+    "code": "000019",
+    "name": "Amanda Cristina Fredo",
+    "shortName": "Amanda",
+    "bitrixName": "Amanda Cristina Fredo",
+    "email": ""
+  },
+  {
+    "code": "000020",
+    "name": "Simone de Oliveira Bragatto",
+    "shortName": "Simone",
+    "bitrixName": "Simone de Oliveira Bragatto",
+    "email": ""
+  },
+  {
+    "code": "000021",
+    "name": "ALINE SANTOS",
+    "shortName": "ALINE",
+    "bitrixName": "ALINE SANTOS",
+    "email": ""
+  },
+  {
+    "code": "000022",
+    "name": "Walter Netto",
+    "shortName": "Walter",
+    "bitrixName": "Walter Netto",
+    "email": ""
+  },
+  {
+    "code": "000023",
+    "name": "Maria Cruz",
+    "shortName": "Maria",
+    "bitrixName": "Maria Cruz",
+    "email": ""
+  },
+  {
+    "code": "000024",
+    "name": "Gisele da Silva",
+    "shortName": "Gisele",
+    "bitrixName": "Gisele da Silva",
+    "email": ""
+  },
+  {
+    "code": "000025",
+    "name": "SEM ESTOQUE",
+    "shortName": "Cristiane",
+    "bitrixName": "SEM ESTOQUE",
+    "email": ""
+  },
+  {
+    "code": "000027",
+    "name": "Lia Vechiato",
+    "shortName": "Lia Vechiato",
+    "bitrixName": "Lia Vechiato",
+    "email": "comercial02@grupodharma.com.br"
+  },
+  {
+    "code": "000028",
+    "name": "Elisangela Santos",
+    "shortName": "Elisangela Santos",
+    "bitrixName": "Elisangela Santos",
+    "email": ""
+  },
+  {
+    "code": "000029",
+    "name": "Luciana Fagundes",
+    "shortName": "Luciana Fagundes",
+    "bitrixName": "Luciana Fagundes",
+    "email": ""
+  },
+  {
+    "code": "000030",
+    "name": "FISCAL",
+    "shortName": "FISCAL",
+    "bitrixName": "FISCAL",
+    "email": ""
+  },
+  {
+    "code": "000031",
+    "name": "Sandra Soares",
+    "shortName": "Sandra Soares",
+    "bitrixName": "Sandra Soares",
+    "email": ""
+  },
+  {
+    "code": "000032",
+    "name": "Giovanna Bussolino",
+    "shortName": "Giovanna Bussolino",
+    "bitrixName": "Giovanna Bussolino",
+    "email": ""
+  },
+  {
+    "code": "000035",
+    "name": "Elaine Cristina de Souza",
+    "shortName": "Elaine Souza",
+    "bitrixName": "Elaine Cristina de Souza",
+    "email": ""
+  },
+  {
+    "code": "000036",
+    "name": "Heitor",
+    "shortName": "Heitor",
+    "bitrixName": "Heitor",
+    "email": ""
+  },
+  {
+    "code": "000037",
+    "name": "Moises Danilo de Paula Rodrigues",
+    "shortName": "Moises Rodrigues",
+    "bitrixName": "Moises Danilo de Paula Rodrigues",
+    "email": ""
+  },
+  {
+    "code": "000038",
+    "name": "Rodrigo Henrique Almeida de Farias",
+    "shortName": "Rodrigo Farias",
+    "bitrixName": "Rodrigo Henrique Almeida de Farias",
+    "email": ""
+  },
+  {
+    "code": "000039",
+    "name": "Gustavo Roveri Galvao de Franca",
+    "shortName": "Gustavo Franca",
+    "bitrixName": "Gustavo Roveri Galvao de Franca",
+    "email": ""
+  },
+  {
+    "code": "000040",
+    "name": "Felipe Leme Correa da Silva",
+    "shortName": "Felipe Silva",
+    "bitrixName": "Felipe Leme Correa da Silva",
+    "email": ""
+  },
+  {
+    "code": "000041",
+    "name": "Alexandre Paes Ribeiro",
+    "shortName": "Alexandre Ribeiro",
+    "bitrixName": "Alexandre Paes Ribeiro",
+    "email": ""
+  },
+  {
+    "code": "000042",
+    "name": "Ludmila Alves Souza",
+    "shortName": "Ludmila Souza",
+    "bitrixName": "Ludmila Alves Souza",
+    "email": ""
+  },
+  {
+    "code": "000043",
+    "name": "Alisson Barros de Menezes",
+    "shortName": "Alisson Menezes",
+    "bitrixName": "Alisson Barros de Menezes",
+    "email": ""
+  },
+  {
+    "code": "000044",
+    "name": "Kelia Aparecida Batista Bandeira",
+    "shortName": "Kelia Bandeira",
+    "bitrixName": "Kelia Aparecida Batista Bandeira",
+    "email": ""
+  },
+  {
+    "code": "000045",
+    "name": "Correios",
+    "shortName": "Correios",
+    "bitrixName": "Correios",
+    "email": ""
+  },
+  {
+    "code": "000047",
+    "name": "Aline Eustaqui Fiuza",
+    "shortName": "Aline",
+    "bitrixName": "Aline Eustaqui Fiuza",
+    "email": ""
+  },
+  {
+    "code": "000048",
+    "name": "Rita de Cassia Fernandes",
+    "shortName": "Rita Fernandes",
+    "bitrixName": "Rita de Cassia Fernandes",
+    "email": ""
+  },
+  {
+    "code": "000049",
+    "name": "fiscal1",
+    "shortName": "fiscal1",
+    "bitrixName": "fiscal1",
+    "email": ""
+  },
+  {
+    "code": "000050",
+    "name": "Carolina Ferreira",
+    "shortName": "Carolina",
+    "bitrixName": "Carolina Ferreira",
+    "email": ""
+  },
+  {
+    "code": "000051",
+    "name": "AMANDA SANTOS",
+    "shortName": "AMANDA",
+    "bitrixName": "AMANDA SANTOS",
+    "email": ""
+  },
+  {
+    "code": "000052",
+    "name": "SOLANGE MARQUES",
+    "shortName": "SOLANGE",
+    "bitrixName": "SOLANGE MARQUES",
+    "email": ""
+  },
+  {
+    "code": "000053",
+    "name": "Priscila Medeiros",
+    "shortName": "Priscila Medeiros",
+    "bitrixName": "Priscila Medeiros",
+    "email": ""
+  },
+  {
+    "code": "000055",
+    "name": "Eliana Aparecida Rosa",
+    "shortName": "Eliana Rosa",
+    "bitrixName": "Eliana Aparecida Rosa",
+    "email": ""
+  },
+  {
+    "code": "000056",
+    "name": "Edilson Bimbatti Junior",
+    "shortName": "Edilson Bimbatti",
+    "bitrixName": "Edilson Bimbatti Junior",
+    "email": ""
+  },
+  {
+    "code": "000057",
+    "name": "Ana Diullia de Souza",
+    "shortName": "Ana Souza",
+    "bitrixName": "Ana Diullia de Souza",
+    "email": ""
+  },
+  {
+    "code": "000058",
+    "name": "Jessica Cristina Xavier Ruas",
+    "shortName": "Jessica Ruas",
+    "bitrixName": "Jessica Cristina Xavier Ruas",
+    "email": ""
+  },
+  {
+    "code": "000059",
+    "name": "Rosana Rodrigues",
+    "shortName": "Rosana",
+    "bitrixName": "Rosana Rodrigues",
+    "email": ""
+  },
+  {
+    "code": "000060",
+    "name": "Eloisa Santos Fernandes",
+    "shortName": "Eloisa Fernandes",
+    "bitrixName": "Eloisa Santos Fernandes",
+    "email": ""
+  },
+  {
+    "code": "000061",
+    "name": "WESLEY SANTOS",
+    "shortName": "",
+    "bitrixName": "WESLEY SANTOS",
+    "email": ""
+  },
+  {
+    "code": "000062",
+    "name": "Vinicius Santos de Paula",
+    "shortName": "Vinicius de Paula",
+    "bitrixName": "Vinicius Santos de Paula",
+    "email": "programacao@grupodharma.com.br"
+  },
+  {
+    "code": "000063",
+    "name": "Michele Ferreira da Silva",
+    "shortName": "Michele Silva",
+    "bitrixName": "Michele Ferreira da Silva",
+    "email": ""
+  },
+  {
+    "code": "000064",
+    "name": "PEDRO NATAL",
+    "shortName": "PEDRO NATAL",
+    "bitrixName": "PEDRO NATAL",
+    "email": ""
+  },
+  {
+    "code": "000065",
+    "name": "JEAN MORAES",
+    "shortName": "JEAN MORAES",
+    "bitrixName": "JEAN MORAES",
+    "email": ""
+  },
+  {
+    "code": "000067",
+    "name": "Thiago Simonato",
+    "shortName": "Thiago Simonato",
+    "bitrixName": "Thiago Simonato",
+    "email": ""
+  },
+  {
+    "code": "000068",
+    "name": "Bruno Henrique Rossi Nunes",
+    "shortName": "Bruno Nunes",
+    "bitrixName": "Bruno Henrique Rossi Nunes",
+    "email": ""
+  },
+  {
+    "code": "000069",
+    "name": "FINALIZADO",
+    "shortName": "FINALIZADO",
+    "bitrixName": "FINALIZADO",
+    "email": "tecnica01@grupodharma.com.br"
+  },
+  {
+    "code": "000070",
+    "name": "CLAUDIA BELLONE",
+    "shortName": "Claudia",
+    "bitrixName": "CLAUDIA BELLONE",
+    "email": "comercial04@grupodharma.com.br"
+  },
+  {
+    "code": "000071",
+    "name": "Mikelly Liberato",
+    "shortName": "Mikelly",
+    "bitrixName": "Mikelly Liberato",
+    "email": ""
+  },
+  {
+    "code": "000072",
+    "name": "RENATO SILVA",
+    "shortName": "RENATO SILVA",
+    "bitrixName": "RENATO SILVA",
+    "email": ""
+  },
+  {
+    "code": "000073",
+    "name": "EDERSON SOUZA",
+    "shortName": "EDERSON SOUZA",
+    "bitrixName": "EDERSON SOUZA",
+    "email": ""
+  },
+  {
+    "code": "000074",
+    "name": "MARIANA ALMEIDA",
+    "shortName": "MARIANA ALMEIDA",
+    "bitrixName": "MARIANA ALMEIDA",
+    "email": ""
+  },
+  {
+    "code": "000075",
+    "name": "Renato Silva",
+    "shortName": "Renato Silva",
+    "bitrixName": "Renato Silva",
+    "email": ""
+  },
+  {
+    "code": "000076",
+    "name": "Mariana Almeida",
+    "shortName": "Mariana Almeida",
+    "bitrixName": "Mariana Almeida",
+    "email": ""
+  },
+  {
+    "code": "000077",
+    "name": "LETICIA ALVES",
+    "shortName": "LETICIA",
+    "bitrixName": "LETICIA ALVES",
+    "email": ""
+  },
+  {
+    "code": "000078",
+    "name": "LETICIA ALVES",
+    "shortName": "LETICIA",
+    "bitrixName": "LETICIA ALVES",
+    "email": ""
+  },
+  {
+    "code": "000079",
+    "name": "IGOR VINICIUS ANDRELO DO PADRO",
+    "shortName": "IGOR",
+    "bitrixName": "IGOR VINICIUS ANDRELO DO PADRO",
+    "email": ""
+  },
+  {
+    "code": "000080",
+    "name": "Carla Araujo",
+    "shortName": "Carla",
+    "bitrixName": "Carla Araujo",
+    "email": ""
+  },
+  {
+    "code": "000081",
+    "name": "Luana Lima",
+    "shortName": "Luana",
+    "bitrixName": "Luana Lima",
+    "email": ""
+  },
+  {
+    "code": "000082",
+    "name": "MARIA EUGENIA",
+    "shortName": "MARIA",
+    "bitrixName": "MARIA EUGENIA",
+    "email": ""
+  },
+  {
+    "code": "000083",
+    "name": "Taisa Fonseca",
+    "shortName": "Taisa",
+    "bitrixName": "Taisa Fonseca",
+    "email": ""
+  },
+  {
+    "code": "000084",
+    "name": "Carolina Mattiuci",
+    "shortName": "Carol",
+    "bitrixName": "Carolina Mattiuci",
+    "email": ""
+  },
+  {
+    "code": "000085",
+    "name": "Leandro Dorotheu",
+    "shortName": "Leandro",
+    "bitrixName": "Leandro Dorotheu",
+    "email": ""
+  },
+  {
+    "code": "000086",
+    "name": "Erika Faramilio",
+    "shortName": "Erika",
+    "bitrixName": "Erika Faramilio",
+    "email": ""
+  },
+  {
+    "code": "000089",
+    "name": "Thais Diniz",
+    "shortName": "Thais Diniz",
+    "bitrixName": "Thais Diniz",
+    "email": ""
+  },
+  {
+    "code": "000090",
+    "name": "Lucas Ferreira",
+    "shortName": "Ferreira",
+    "bitrixName": "Lucas Ferreira",
+    "email": ""
+  },
+  {
+    "code": "000091",
+    "name": "Carla Thais Sobral Martinez",
+    "shortName": "Carla Martinez",
+    "bitrixName": "Carla Thais Sobral Martinez",
+    "email": "comercial01@grupodharma.com.br"
+  },
+  {
+    "code": "000092",
+    "name": "Sabrina Soares",
+    "shortName": "Sabrina Soares",
+    "bitrixName": "Sabrina Soares",
+    "email": "comercial01@grupodharma.com.br"
+  },
+  {
+    "code": "000093",
+    "name": "Rodrigo Ribeiro",
+    "shortName": "Rodrigo Ribeiro",
+    "bitrixName": "Rodrigo Ribeiro",
+    "email": ""
+  },
+  {
+    "code": "000094",
+    "name": "Simone Freitas",
+    "shortName": "Simone Freitas",
+    "bitrixName": "Simone Freitas",
+    "email": ""
+  },
+  {
+    "code": "000096",
+    "name": "Jackeline Oliveira",
+    "shortName": "Jackeline Oliveira",
+    "bitrixName": "Jackeline Oliveira",
+    "email": ""
+  },
+  {
+    "code": "000097",
+    "name": "RAPHAEL LIMA",
+    "shortName": "",
+    "bitrixName": "RAPHAEL LIMA",
+    "email": ""
+  },
+  {
+    "code": "000098",
+    "name": "Leticia Medeiros",
+    "shortName": "",
+    "bitrixName": "Leticia Medeiros",
+    "email": ""
+  },
+  {
+    "code": "000099",
+    "name": "Lauryn Moraes",
+    "shortName": "",
+    "bitrixName": "Lauryn Moraes",
+    "email": ""
+  },
+  {
+    "code": "000100",
+    "name": "Lucas Ferreira",
+    "shortName": "Lucas Ferreira",
+    "bitrixName": "Lucas Ferreira",
+    "email": ""
+  },
+  {
+    "code": "000101",
+    "name": "Joao Pedro",
+    "shortName": "Joao Pedro",
+    "bitrixName": "Joao Pedro",
+    "email": ""
+  },
+  {
+    "code": "000102",
+    "name": "Lucas Silva",
+    "shortName": "Lucas Jose",
+    "bitrixName": "Lucas Silva",
+    "email": ""
+  },
+  {
+    "code": "000103",
+    "name": "GIOVANA DE AMORIM GUIMARAES",
+    "shortName": "GIOVANA GUIMARAES",
+    "bitrixName": "GIOVANA DE AMORIM GUIMARAES",
+    "email": "atendimento@grupodharma.com.br"
+  },
+  {
+    "code": "000104",
+    "name": "LAUANA RODRIGUES",
+    "shortName": "",
+    "bitrixName": "LAUANA RODRIGUES",
+    "email": ""
+  },
+  {
+    "code": "000106",
+    "name": "COTACAO FRETE",
+    "shortName": "COTACAO FRETE",
+    "bitrixName": "COTACAO FRETE",
+    "email": ""
+  },
+  {
+    "code": "000107",
+    "name": "Juliana Pioli",
+    "shortName": "",
+    "bitrixName": "Juliana Pioli",
+    "email": ""
+  },
+  {
+    "code": "000108",
+    "name": "Juliana Cajueiro Pioli",
+    "shortName": "Juliana Pioli",
+    "bitrixName": "Juliana Cajueiro Pioli",
+    "email": ""
+  },
+  {
+    "code": "000109",
+    "name": "Maria Eduarda",
+    "shortName": "",
+    "bitrixName": "Maria Eduarda",
+    "email": ""
+  },
+  {
+    "code": "000110",
+    "name": "Lucas Fonseca",
+    "shortName": "Lucas Fonseca",
+    "bitrixName": "Lucas Fonseca",
+    "email": ""
+  },
+  {
+    "code": "000111",
+    "name": "Leonardo Smith",
+    "shortName": "Leonardo",
+    "bitrixName": "Leonardo Smith",
+    "email": "comercial03@grupodharma.com.br"
+  },
+  {
+    "code": "000112",
+    "name": "Patrick Antunes",
+    "shortName": "Patrick Antunes",
+    "bitrixName": "Patrick Antunes",
+    "email": ""
+  },
+  {
+    "code": "000113",
+    "name": "Rafaela Alves",
+    "shortName": "Rafaela",
+    "bitrixName": "Rafaela Alves",
+    "email": ""
+  },
+  {
+    "code": "000114",
+    "name": "Vendedor Teste bitrix",
+    "shortName": "Teste Bitrix",
+    "bitrixName": "Vendedor Teste bitrix",
+    "email": ""
+  }
+]

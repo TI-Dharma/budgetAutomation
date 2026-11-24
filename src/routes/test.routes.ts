@@ -1,8 +1,6 @@
 import { Router, Request, Response } from 'express';
-import axios from 'axios';
 import { env } from '../config/env';
-import { quotePricingEnv } from '../config/quote-pricing.env';
-import { pricingRepository } from '../services/pricing.repository';
+import { bitrixQuoteService } from '../services/bitrix-quote.service';
 import { protheusService } from '../services/protheus.service';
 
 const testRoutes = Router();
@@ -24,24 +22,25 @@ async function measureCheck<T>(fn: () => Promise<T>) {
 /**
  * GET /teste
  * Verifica rapidamente se a API está no ar.
- * Opcional: GET /teste?check=true para testar também PostgreSQL, Bitrix24 e TOTVS Protheus.
+ * Opcional: GET /teste?check=true para testar conectividade com Bitrix24 e TOTVS Protheus.
  */
 testRoutes.get('/teste', async (req: Request, res: Response) => {
   const runDeepCheck = ['true', '1'].includes(String(req.query.check ?? '').toLowerCase());
 
   const basePayload = {
     success: true,
-    message: 'API funcionando corretamente!',
+    message: 'API funcionando corretamente! (Arquitetura 2.0 - Precificação Nativa TOTVS Protheus + Matriz Fiscal)',
     service: 'bitrix-protheus-integration',
+    version: '2.0.0',
     port: env.PORT,
     uptimeSeconds: Math.floor(process.uptime()),
     timestamp: new Date().toISOString(),
     endpoints: {
-      teste: 'GET /teste (adicione ?check=true para testar Banco, Bitrix24 e Protheus)',
-      testeWebhook: 'POST /teste (ecoa o JSON recebido para testar chamadas de webhook)',
       health: 'GET /health',
-      unifiedQuote: 'POST /webhook/bitrix/quote/process (adicione ?dryRun=true para simular)',
-      createOrder: 'POST /webhook/bitrix/create-order',
+      teste: 'GET /teste (adicione ?check=true para testar Bitrix24 e TOTVS Protheus)',
+      testeWebhook: 'POST /teste (ecoa o JSON recebido para testar chamadas de webhook)',
+      stage1Opportunity: 'POST /webhook/bitrix/opportunity (Etapa 1: Cliente SA1 + Oportunidade AD1)',
+      stage2Proposal: 'POST /webhook/bitrix/proposal (Etapa 2: Matriz Fiscal + Proposta ADY/ADZ + Precificação Nativa)',
     },
   };
 
@@ -50,36 +49,35 @@ testRoutes.get('/teste', async (req: Request, res: Response) => {
     return;
   }
 
-  const [postgres, bitrix24, protheus] = await Promise.all([
+  const [bitrix24, protheus] = await Promise.all([
     measureCheck(async () => {
-      const dollarRate = await pricingRepository.getDollarRate();
-      return { dollarRate };
-    }),
-    measureCheck(async () => {
-      const { data } = await axios.post(
-        `${quotePricingEnv.bitrixWebhookUrl}crm.quote.list.json`,
-        { start: -1, select: ['ID'] },
-        { timeout: 6000 }
-      );
-      if (data?.error) throw new Error(`${data.error}: ${data.error_description || ''}`);
-      return { quotesSampleCount: Array.isArray(data?.result) ? data.result.length : 0 };
+      const statuses = await bitrixQuoteService.listQuoteStatuses(true);
+      const priceUpdated = await bitrixQuoteService.resolvePriceUpdatedStatusId();
+      const errorStage = await bitrixQuoteService.resolveErrorStatusId();
+      return {
+        quoteStatusesCount: statuses.length,
+        priceUpdatedStage: priceUpdated,
+        errorStage,
+      };
     }),
     measureCheck(async () => {
       const found = await protheusService.findProductsByCodes(['HKLN4606']);
-      return { sb1QueryOk: true, sampleFound: found.has('HKLN4606') };
+      return {
+        sb1QueryOk: true,
+        sampleFound: found.has('HKLN4606'),
+      };
     }),
   ]);
 
-  const allOk = postgres.ok && bitrix24.ok && protheus.ok;
+  const allOk = bitrix24.ok && protheus.ok;
 
   res.status(allOk ? 200 : 207).json({
     ...basePayload,
     success: allOk,
     message: allOk
-      ? 'API e todas as integrações (PostgreSQL, Bitrix24 e Protheus) estão funcionando!'
+      ? 'API e integrações (Bitrix24 e TOTVS Protheus) estão funcionando!'
       : 'API online, mas uma ou mais integrações falharam na verificação.',
     integrations: {
-      postgres,
       bitrix24,
       protheus,
     },

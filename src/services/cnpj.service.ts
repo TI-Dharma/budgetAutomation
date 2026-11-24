@@ -1,12 +1,12 @@
 import axios from 'axios';
-import { quotePricingEnv } from '../config/quote-pricing.env';
+import { env } from '../config/env';
 
 export interface CnpjFiscalInfo {
   cnpj: string;
   uf: string;
   stateRegistrations: any[];
   isExempt: boolean;
-  /** Dados cadastrais retornados pela API publica (uteis caso o cliente ainda nao exista na SA1) */
+  /** Dados cadastrais retornados pela API pública (úteis para cadastro automático na SA1 via MATA030) */
   companyDetails: {
     legalName?: string;
     tradeName?: string;
@@ -24,16 +24,17 @@ export interface CnpjFiscalInfo {
 
 /**
  * Consulta a API pública https://publica.cnpj.ws para descobrir o estado (UF),
- * se o cliente possui Inscrição Estadual (sem IE => isento) e dados cadastrais completos.
+ * se o cliente possui Inscrição Estadual ativa (sem IE => isento / não contribuinte)
+ * e os dados cadastrais completos para eventual cadastro na SA1.
  */
 export class CnpjService {
   public async getFiscalInfo(cnpj: string): Promise<CnpjFiscalInfo> {
     const cleanCnpj = String(cnpj || '').replace(/\D/g, '');
     if (cleanCnpj.length !== 14) {
-      throw new Error(`CNPJ inválido: "${cnpj}". Informe 14 dígitos.`);
+      throw new Error(`CNPJ inválido: "${cnpj}". Informe 14 dígitos numéricos.`);
     }
 
-    const url = `${quotePricingEnv.cnpjApiUrl}${cleanCnpj}`;
+    const url = `${env.CNPJ_API_URL}${cleanCnpj}`;
     console.log(`[CnpjService] GET ${url}`);
 
     try {
@@ -49,9 +50,11 @@ export class CnpjService {
         ? est.inscricoes_estaduais
         : [];
 
-      const activeIe =
-        stateRegistrations.find((ie) => ie?.ativo === true && ie?.inscricao_estadual) ??
-        stateRegistrations.find((ie) => ie?.inscricao_estadual);
+      const activeIe = stateRegistrations.find(
+        (ie) => ie?.ativo !== false && ie?.inscricao_estadual
+      );
+
+      const isExempt = !activeIe;
 
       const street = [est?.tipo_logradouro, est?.logradouro].filter(Boolean).join(' ').trim();
       const number = est?.numero ? String(est.numero).trim() : '';
@@ -66,7 +69,7 @@ export class CnpjService {
         cnpj: cleanCnpj,
         uf: String(uf).toUpperCase(),
         stateRegistrations,
-        isExempt: stateRegistrations.length === 0,
+        isExempt,
         companyDetails: {
           legalName: data?.razao_social ? String(data.razao_social).trim() : undefined,
           tradeName: est?.nome_fantasia ? String(est.nome_fantasia).trim() : undefined,
@@ -80,9 +83,7 @@ export class CnpjService {
           zipCode: est?.cep ? String(est.cep).replace(/\D/g, '') : undefined,
           stateRegistration: activeIe?.inscricao_estadual
             ? String(activeIe.inscricao_estadual).trim()
-            : stateRegistrations.length === 0
-              ? 'ISENTO'
-              : undefined,
+            : 'ISENTO',
         },
       };
     } catch (error: any) {
