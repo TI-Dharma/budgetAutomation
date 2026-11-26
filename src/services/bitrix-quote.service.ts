@@ -614,8 +614,8 @@ export class BitrixQuoteService {
 
       const logText = logLines.join('\n');
 
+      // 1º Grava observação e comentários na Timeline antes de mover de coluna
       await this.updateQuoteFields(params.quoteId, {
-        STATUS_ID: statusId,
         COMMENTS: logText,
       });
 
@@ -623,6 +623,10 @@ export class BitrixQuoteService {
       if (params.dealId) {
         await this.addTimelineComment('deal', params.dealId, logText);
       }
+
+      // 2º Aguarda 5 segundos e só então move para a coluna de Erro
+      await new Promise((resolve) => setTimeout(resolve, 5000));
+      await this.updateQuoteStatus(params.quoteId, statusId);
 
       return {
         moved: true,

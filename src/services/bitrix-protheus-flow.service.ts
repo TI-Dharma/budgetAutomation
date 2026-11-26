@@ -783,7 +783,8 @@ export class BitrixProtheusFlowService {
         extraQuoteFields[env.BITRIX_QUOTE_SALESMAN_TOTVS_FIELD] = salesmanResolution.code;
       }
 
-      await bitrixQuoteService.updateQuoteStatus(ctx.quoteId, statusId, extraQuoteFields);
+      // 1º Grava todos os campos complementares no orçamento e no negócio (ainda sem mudar de coluna)
+      await bitrixQuoteService.updateQuoteFields(ctx.quoteId, extraQuoteFields);
 
       if (ctx.dealId && env.BITRIX_DEAL_TOTVS_ID_FIELD) {
         await bitrixQuoteService.updateDealFields(ctx.dealId, {
@@ -816,7 +817,15 @@ export class BitrixProtheusFlowService {
         `• Valor Total Final (Produtos + ST): R$ ${totalCalculated.toFixed(2)}`,
       ].join('\n');
 
+      // 2º Adiciona o comentário na Timeline antes de mover de coluna
       await bitrixQuoteService.addTimelineComment('quote', ctx.quoteId, summaryComment);
+
+      // 3º Aguarda 5 segundos para o Bitrix processar produtos, campos e comentário antes de disparar gatilhos da coluna
+      console.log(`[Stage2Proposal] Aguardando 5s após gravar comentário antes de mover orçamento ${ctx.quoteId} para "${statusName}" (${statusId})...`);
+      await new Promise((resolve) => setTimeout(resolve, 5000));
+
+      // 4º Troca a coluna do orçamento por último
+      await bitrixQuoteService.updateQuoteStatus(ctx.quoteId, statusId);
 
       bitrixUpdateResult = {
         updated: true,
